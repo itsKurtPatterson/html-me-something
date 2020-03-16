@@ -15,18 +15,21 @@ body {
     line-height: 40px;
     float: left;
     margin: 1.2em 0 0 2.2em;
+    padding-top: 10px;
     font-weight: bolder;
     color: #fff;
     text-decoration: none;
 }
 
 
-
 .nav {
     line-height: 40px;
     margin: 1.2em;
+    padding-top: 15px;
     position: absolute;
     right: 0;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 15px;
 }
 
 .nav ul li {
@@ -51,6 +54,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
 
 .social-media {
     position: absolute;
@@ -97,7 +101,7 @@ body {
 }
 
 .header h4 {
-    color: #fff;
+    color: yellowgreen ;
     font-weight: bolder;
 }
 
@@ -127,12 +131,13 @@ body {
 
 .row {
     padding: 2.6em 2.6em 2em 2.6em;
-    background: #000;
+    background-color: rgba(0,0,0,.5);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
 .bottom-bar h6 {
+    color: yellowgreen;
     font-weight: bolder;
     text-transform: uppercase;
 }
@@ -147,7 +152,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: #fff;
+    background:#fff;
     top: 0%;
 }
 
@@ -159,4 +164,24 @@ body {
     font-size: 20px;
     font-weight: bolder;
     letter-spacing: 12px;
+}
+
+.logo a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.side-strip span a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: yellowgreen;
+    text-decoration: none;
 }

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurt Patterson | Software Engineer</title>
-    
+
+    <!-- link to favicon  -->
+    <link rel="icon" type="png" sizes="16x16" href="favicon-16x16.png">
+
     <!-- link to css -->
     <link rel="stylesheet" href="./styles.css">
 
@@ -20,6 +23,7 @@
     <!-- link to greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
+
 </head>
 <body>
 
@@ -28,29 +32,28 @@
     </div>
 
     <div class="wrapper">
-        <div class="logo"><a href="index.html">K<!-- Insert Logo Here --></a></div>
+        <div class="logo"><a href="index.html"><img src="favicon-32x32.png" alt="test"></a></div>
         <div class="nav">
             <ul>
-                <li>Home</li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./aboutMe.html">About Me</a></li>
-                <li>Experience</li>
-                <li>Contact Me</li>
-                <li><button>RESUME</button></li>
+                <li><a href="./experience.html">Experience</a></li>
+                <li><a href="./contactMe.html">Contact Me</a></li>
             </ul>
         </div>
         <div class="social-media">
             <ul>
                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/kurtapatterson"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/itsKurtPatterson"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div class="side-strip">
-            <span><a href="#">kurt.patterson@outlook.com</a></span>
+            <span><a href="mailto:kurt.patterson@gmail.com" Subject="Hello" target="_top">kurt.patterson@outlook.com</a></span>
         </div>
         <div class="header">
             <h4>Hello, my name is</h4>
-            <h1>Kurt Patterson.<br>I create things for the web.</h1>
+            <h1>Kurt Patterson.<br>I am a JavaScript Developer.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quas dolore? Sapiente, minus. Facere asperiores vero earum praesentium nam commodi sapiente hic, qui deserunt voluptatem provident amet consequatur ducimus eum harum quia quod, dignissimos ut magni temporibus dolores fugiat quas. Illo, deleniti. Repellendus necessitatibus molestias asperiores eum eaque facilis placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat distinctio delectus mollitia facilis voluptatum? Exercitationem sapiente alias nostrum reiciendis molestiae ad, blanditiis delectus quibusdam suscipit illo nam magnam. Ducimus, enim illo rerum natus atque quae dolore obcaecati aperiam quod. Porro magni excepturi at molestiae, consequatur natus mollitia optio illum sit!</p>
             <button>CONTACT</button>
         </div>
@@ -58,15 +61,15 @@
             <div class="container">
                 <div class="row">   
                     <div class="col-lg-4">
-                        <h6>Lorem ipsum dolor sit.</h6>
+                        <h6>A little about myself...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, exercitationem labore. Vero, amet distinctio!</p>
                     </div>
                     <div class="col-lg-4">
-                        <h6>Lorem ipsum dolor sit.</h6>
+                        <h6>Some of my hobbies...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, exercitationem labore. Vero, amet distinctio!</p>
                     </div>
                     <div class="col-lg-4">
-                        <h6>Lorem ipsum dolor sit.</h6>
+                        <h6>Learn animation with Greensock...</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, exercitationem labore. Vero, amet distinctio!</p>
                     </div>
                 </div>
@@ -78,16 +81,100 @@
 
     TweenMax.to(".overlay h1", 2, {
         opacity: 0,
-        y: -60,
+        x: -60,
         ease: Expo.easeInOut
     })
 
     TweenMax.to(".overlay", 2, {
-    
         delay: 1,
-        top: "-100%",
+        left: "-100%",
         ease: Expo.easeInOut
     })
+
+    TweenMax.from(".logo", 1, {
+        delay: 2.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".nav", 2, {
+        delay: 2.2,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".nav ul li", 1, {
+        delay: 2.4, 
+        opacity: 0, 
+        y: 20,
+        ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".social-media ul li", 1, {
+        delay: 2.4, 
+        opacity: 0, 
+        y: 20,
+        ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".side-strip", 2, {
+        delay: 2.4,
+        opacity: 0,
+        y: 40,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row", 2, {
+        delay: 2.4,
+        opacity: 0,
+        x: 40,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row h6", 2, {
+        delay: 3,
+        opacity: 0,
+        y: 40,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row p", 2, {
+        delay: 3.2,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header h4", 2, {
+        delay: 3.2,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header h1", 2, {
+        delay: 3.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header p", 2, {
+        delay: 3.6,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header button", 2, {
+        delay: 3.8,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+    })
+
 
     </script>
     
